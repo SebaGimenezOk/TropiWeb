@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import AudioPlayer from "./components/AudioPLayer"
+import Store from "./components/Store";
+import Contacto from "./components/Contacto";
+import Video from "./components/Video";
+import Top5 from "./components/Top5";
+
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="relative z-0">
+        <AudioPlayer />
+        <NavBar />
+
+      </div>
+
+      <div className="relative z-[-1]">
+        <Home />
+        <Video />
+        <Top5 />
+        <Store />
+        <Contacto />
+
+      </div>
+
+
+
+
     </div>
   );
 }
