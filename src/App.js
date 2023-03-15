@@ -16,15 +16,16 @@ function App() {
       <div className="relative z-0">
         <AudioPlayer />
         <NavBar />
-
       </div>
 
+      <Video  />
       <div className="relative z-[-1]">
-        <Home />
-        <Video />
+      <Home />
         <Top5 />
+    
         <Store />
         <Contacto />
+      
 
       </div>
 
